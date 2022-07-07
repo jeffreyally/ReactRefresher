@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 
 export function Blah(props){
 
-  const [clicks,setClicks] = useState({clicked:0,samplekey:'tacos'})
+  
   
 
 
     return(
-      <>
-      <button onClick={() => {
-        
-        setClicks({...clicks,clicked:clicks['clicked']+1})
-        console.log(clicks)
-      }
-        }>I have imported and am using a prop called {props.name}</button>
-      <span>{clicks.samplekey}I am refreshing my knowledge on React. The button above has been clicked this many times so far: {clicks.clicked}</span>
-      </>
+      <div className='StarWars d-flex flex-column align-items-center justify-content-center' style={{width:'100vw', height:'100vh'}}>
+      
+      <h1>Name</h1>
+      <br></br>
+      <h5>Height</h5>
+      <h5>Home World</h5>
+      <h5>Films</h5>
+     
+      <button type="button" class="btn btn-warning btn-lg mt-5" style={{backgroundColor:'black',color:'yellow'}}>Randomize Character</button>
+      </div>
     )
   }
