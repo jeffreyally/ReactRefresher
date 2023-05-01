@@ -25,5 +25,7 @@ jobs:
       - run: echo "Show me the preinstalled tools ${{runner.tool_cache}}"
       
       - run: ls ${{runner.tool_cache}}
+      
+      - run: cd / && cd opt/ && cd hostedtoolcache/ && ls -l
 
       - run: echo "Lastly here is our job status ${{job.status}}"
