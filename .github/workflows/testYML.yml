@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    #looks like your "uses" steps go at the top?
+      #looks like your "uses" steps go at the top?
       uses: actions/checkout@v2
       - run: echo "Testing Github Actions on a ${{runner.os}} os provided by Github"
       
