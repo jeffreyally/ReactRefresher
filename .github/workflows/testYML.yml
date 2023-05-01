@@ -8,7 +8,7 @@ jobs:
     
     steps:
     #looks like your "uses" steps go at the top?
-      - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       - run: echo "Testing Github Actions on a ${{runner.os}} os provided by Github"
       
       - run: echo "Branch running this is ${{github.ref}} and the repo is ${{github.repository}}"
