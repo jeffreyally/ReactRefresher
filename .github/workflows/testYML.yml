@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      
+      - uses: actions/checkout@v2
+      - name: Checkout repo code using "actions/checkout@v2"
       - run: echo "Testing Github Actions on a ${{runner.os}} os provided by Github"
       
       - run: echo "Branch running this is ${{github.ref}} and the repo is ${{github.repository}}"
       
       
       
-      - name: Checkout repo code using "actions/checkout@v2"
         
         
       - run: echo "Our workspace is ${{github.workspace}} and below are the commands pwd and then ls-la"
