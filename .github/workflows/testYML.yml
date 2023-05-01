@@ -1,1 +1,27 @@
-name:"t"
+name: Test Actions
+on: [push,workflow_dispatch]
+
+jobs:
+  nameOfJobHere:
+    name: Display Name to show up on Action Page
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: echo "Testing Github Actions on a ${{runner.os}} os provided by Github"
+      
+      - run: echo "Branch running this is ${{github.ref}} and the repo is ${{github.repository}}"
+      
+      - run: echo "Mistake
+      
+      - name: Checkout repo code using "actions/checkout@v2"
+        uses: actions/checkout@v2
+        
+      - run: echo "Our workspace is ${{github.workspace}} and below are the commands pwd and then ls-la"
+      
+      - run: pwd
+      
+      - run: ls-la
+      
+      - run: echo "Show me the preinstalled tools ${{runner.tool_cache}}
+
+      - run: echo "Lastly here is our job status ${{job.status}}
