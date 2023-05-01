@@ -20,7 +20,7 @@ jobs:
       
       - run: pwd
       
-      - run: ls-la
+      - run: ls -la
       
       - run: echo "Show me the preinstalled tools ${{runner.tool_cache}}
 
